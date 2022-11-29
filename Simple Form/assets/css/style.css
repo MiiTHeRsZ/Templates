@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+:root {
+    --font-style: 'Nunito Sans', sans-serif;
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #2A2A2A;
+    font-family: var(--font-style);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40rem;
+    padding: 4rem;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    background: #2A2A2A;
+    box-shadow: 10px 10px 20px #111111, -10px 0px 20px #434343;
+}
+
+.login-box h2 {
+    margin: 0 0 3rem;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+}
+
+.login-box .user-box input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.6rem;
+    color: #FFF;
+    margin-bottom: 3rem;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: relative;
+    left: 0;
+    top: -6rem;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #FFF;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -8.5rem;
+    left: 0;
+    color: #8F7CEC;
+    font-size: 1.2rem;
+}
+
+#submit {
+    padding: 1rem 2rem;
+    color: #CBBDDB;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    margin: auto;
+}
+
+#submit:hover {
+    color: #FFF;
+    border-radius: 3rem;
+    background: #3B3267;
+    box-shadow: inset 5px 5px 10px #231E3E, inset -5px -5px 10px #534690;
+}
+
+.button-form {
+    display: flex;
+    margin-top: 2rem;
+}
+
+#register {
+    font-size: 1.4rem;
+    color: #CBBDDB;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#register a {
+    margin: auto;
+    color: #3B3267;
+}
