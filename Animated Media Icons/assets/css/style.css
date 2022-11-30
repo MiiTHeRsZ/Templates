@@ -1,0 +1,75 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+:root {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #131315;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 0;
+}
+
+ul div {
+    width: 4rem;
+    height: 5px;
+    background-color: #9581F4;
+    margin: auto;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    width: 7rem;
+    height: 7rem;
+    margin: 0 2rem;
+}
+
+ul li span {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: #2A2A2A;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 3rem !important;
+    transition: .5s ease-out;
+}
+
+ul li:hover span {
+    transition: .3s;
+}
+
+ul li:nth-child(2):hover span {
+    background: #2C3456;
+}
+ul li:nth-child(3):hover span {
+    background: #6A9AEE;
+}
+ul li:nth-child(4):hover span {
+    background: #CC296C;
+}
+ul li:nth-child(5):hover span {
+    background: #2C3456;
+}
+ul li:nth-child(6):hover span {
+    background: #101323;
+}
